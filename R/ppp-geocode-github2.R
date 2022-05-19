@@ -5,7 +5,7 @@ library(data.table)
 library(tictoc)
 
 low_accuracy2 <- read_csv("./addresses_to_geocode.csv")
-output2 <- read_csv("./geocodio_ppp_fixed_addresses.csv")
+output2 <- read_csv("./geocodio_ppp_fixed_addresses2.csv")
 #output2 <- tibble()
 
 #which(low_accuracy2$address=="6318 Hamilton Way, Eastampton Township, NJ, 08060-1679")
@@ -42,7 +42,7 @@ for (i in 645:684){ #Skipped 782-783 because 783 is short, only 72 addresses NEE
   addresses7 <- rbindlist(addresses6, fill = TRUE, idcol = F)
 
   output2 <- bind_rows (output2, addresses7)
-  write_csv (output2, "./geocodio_ppp_fixed_addresses.csv")
+  write_csv (output2, "./geocodio_ppp_fixed_addresses2.csv")
   toc()
   print (paste ("Finished", i, "of 783 sets of 1000 addresses.", Sys.time()))
 }
