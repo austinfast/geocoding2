@@ -1,1 +1,2 @@
 address,lat,long,arcgis_address,score,location.x,location.y,extent.xmin,extent.ymin,extent.xmax,extent.ymax
+"207 W 5th St, Wakefield, NE, 68784-5082",42.266794,-96.86750403,"207 W 5th St, Wakefield, Nebraska, 68784",100,-96.86750403,42.266794,-96.86850403,42.265794,-96.86650403,42.267794
