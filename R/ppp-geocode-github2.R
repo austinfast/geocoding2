@@ -26,7 +26,7 @@ arc_code <- function (y){
 #break down and save every 500
 #addresses4 <- addresses4[301:length(addresses4)] #remove 300 sets of 100 already done
 
-for (i in 650:684){ #Skipped 782-783 because 783 is short, only 72 addresses NEED TO DO LATER!
+for (i in 371:390){ #Skipped 782-783 because 783 is short, only 72 addresses NEED TO DO LATER!
   #i <- 783
   tic()
   start <- i * 10 - 9
